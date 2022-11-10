@@ -1,11 +1,14 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import TodoListPage from "./TodoListPage";
 
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
   },
 });
+
+
 
 function App() {
   return (
@@ -19,9 +22,7 @@ function App() {
           alignItems: "center",
         }}
       >
-        <Typography variant="h2" color="textPrimary">
-          Let's Go
-        </Typography>
+        <TodoListPage />
       </Box>
     </ThemeProvider>
   );
